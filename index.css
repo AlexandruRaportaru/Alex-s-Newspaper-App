@@ -1,0 +1,519 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rye", cursive;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1140px;
+    margin:0 auto;
+}
+
+.wrapper-background {
+    background-color: #f7f7f7;
+    box-shadow: inset 0 0 10em #000000;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 185px;
+    margin-bottom: 100px;
+}
+
+.logo-image {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image img {
+    height: 185px;
+}
+
+.title h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Rye", cursive;
+    padding-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    padding: 0 100px 0 0;
+    max-width: 832px;
+}
+
+.description-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.description-title .flip {
+    transform: scaleX(-1);
+}
+
+.description p {
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+}
+
+.description .press {
+    width: 100%;
+    height: auto;
+}
+
+.description #bolded {
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.birthname, .birthplace, .birthdate {
+    margin: 0 0 30px 0;
+}
+
+form input, form select {
+    padding: 6px 12px;
+    font-size: 17px;
+    margin: 5px 0;
+    width: 100%;
+    border: none;
+    font-family: 'Special Elite', cursive;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form select {
+    cursor: pointer;
+    padding: 10px 9px;
+}
+
+form h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form .reward {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #000000, 0 0 0 6px #ffffff;
+    -webkit-transition: all .2s;
+    text-decoration: none;
+}
+
+.reward p {
+    margin: 0;
+    font-size: 21px;
+    margin-top: 2px;
+}
+
+.reward img {
+    margin: 5px 11px;
+}
+
+.reward:hover {
+    background-color: #000000;
+    color: white !important;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px #000000, 0 0 0 2px #ffffff, 0 0 0 6px #000000;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.endline {
+    border-top: 3px solid black;
+}
+
+.newspaper-background {
+    background-image: url("./Images/background4.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 830px;
+    display: none;
+}
+
+.newspaper {
+    text-align: center;
+}
+
+.newspaper-date {
+    padding-top: 100px;
+}
+
+.line {
+    border-top: 3px solid #362A29;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.first {
+    width: 400px;
+}
+
+.second, .third {
+    width: 840px;
+}
+
+.newspaper-title h1 {
+    font-size: 49px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-weight: bold;
+    color: #241C1F;
+    padding-top: 20px;
+}
+
+.newspaper h6 {
+    font-size: 20px;
+    font-family: 'Special Elite', cursive;
+    color: #241C1F;
+    padding-bottom: 20px;
+}
+
+.newspaper-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 856px;
+}
+
+.newspaper-news, .newspaper-user {
+    font-family: 'Special Elite', cursive;
+    padding: 15px;
+    text-align: left;
+    max-width: 37%;
+}
+
+.h-line {
+    width: 3px;
+    background-color: #362A29;
+    border-radius: 50%;
+}
+
+.third-mid {
+    max-height: 176px;
+}
+
+.newspaper-content img {
+    width: 202px;
+    height: 216px;
+    max-width: 26%;
+    margin: 6px;
+    border: 4px solid black; 
+}
+
+.filtered {
+    margin: 2px;
+    background-size: auto, auto, auto, cover;
+    background-repeat: repeat;
+    background-position: center;
+    filter: blur(0.03em) saturate(0.7) contrast(1.5) brightness(0.7) sepia(100%);
+}
+
+.newspaper h4 {
+    font-weight: bold;
+}
+
+.newspaper-content p {
+    margin: 0;
+}
+
+.newspaper-footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 856px;
+    font-family: 'Special Elite', cursive;
+    text-align: left;
+}
+
+.trivia {
+    padding: 15px;
+    width: 50%;
+}
+
+.weather {
+    padding: 15px;
+    width: 50%;
+}
+
+.button-another {
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid white;
+}
+
+.footer a {
+    color: black;
+}
+
+.scroll {
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------> Media query 1200px */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    .content {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+    form {
+        width: 100%;
+        height: auto;
+    }
+
+    .description-title h3 {
+        white-space: nowrap;
+    }
+
+    .description-title .flip {
+        visibility: hidden;
+    }
+
+}
+
+/* ----------------------------------------------------------> Media query 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .content {
+        display: block;
+        width: 100%;
+        padding: 0 50px;
+        margin: 0 auto 30px auto;
+    }
+
+    .logo-image img {
+        height: 150px;
+    }
+
+    .title h1 {
+        white-space: nowrap;
+        font-size: 30px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        margin:0 auto 30px auto;
+        padding: 0;
+        max-width: 768px;
+    }
+
+    .description-title {
+        justify-content: center;
+    }
+
+    .responsive-line {
+        width: 100%;
+        border-bottom: 3px solid #362A29;
+        margin-bottom: 30px;
+    }
+
+    form {
+        width: 100%;
+        text-align: center;
+    }
+
+    form h5 {
+        margin: 0 auto;
+    }
+
+    form input, form select {
+        margin: 5px 5px;
+    }
+
+    form .full-name {
+        width: -webkit-fill-available;
+    }
+
+    form .birthplace, form .birthdate {
+        display: flex;
+    }
+
+    form .button-get {
+        margin: auto;
+    }
+
+    .endline {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+/* ----------------------------------------------------------> Media query 768px */
+
+@media (min-width: 501px) and (max-width: 768px) {
+    
+    .content {
+        display: block;
+        width: 100%;
+        padding: 0 50px;
+        margin: 0 auto 30px auto;
+    }
+
+    .logo-image img {
+        height: 150px;
+    }
+
+    .title h1 {
+        white-space: nowrap;
+        font-size: 30px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .description-title {
+        justify-content: center;
+    }
+
+    .description-title .flip {
+        visibility: hidden;
+    }
+
+    .responsive-line {
+        width: 100%;
+        border-bottom: 3px solid #362A29;
+        margin-bottom: 30px;
+    }
+
+    form {
+        width: 100%;
+        text-align: center;
+    }
+
+    form h5 {
+        margin: 0 auto;
+    }
+
+    form input, form select {
+        margin: 5px 5px;
+    }
+
+    form .full-name {
+        width: -webkit-fill-available;
+    }
+
+    form .birthplace, form .birthdate {
+        display: flex;
+    }
+
+    form .button-get {
+        margin: auto;
+    }
+}
+
+/* ----------------------------------------------------------> Media query 500px */
+
+@media (max-width: 500px) {
+    
+    .content {
+        display: block;
+        width: 100%;
+        padding: 0 50px;
+        margin: 0 auto 30px auto;
+    }
+
+    .logo-image img {
+        height: 150px;
+    }
+
+    .title h1 {
+        white-space: nowrap;
+        font-size: 30px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        margin-bottom: 100px;
+        padding: 0;
+        width: 100%
+    }
+
+    .description-title {
+        justify-content: center;
+    }
+
+    .description-title .flip {
+        visibility: hidden;
+    }
+
+    form {
+        width: 334px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    form h5 {
+        margin: 0 auto;
+    }
+
+    form input, form select {
+        margin: 5px 5px;
+    }
+
+    form .fullname {
+        width: 324px;
+    }
+
+    form .birthplace, form .birthdate {
+        display: flex;
+    }
+
+    form .button-get {
+        margin: auto;
+    }
+}
